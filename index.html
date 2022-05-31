@@ -4,25 +4,48 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      @media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+      }
+      @media only screen and (max-width: 600px){
+        /*Big smartphones [426px -> 600px]*/
+      }
+      @media only screen and (max-width: 425px){
+        /*Small smartphones [325px -> 425px]*/
+      }
+
+      .flex-container {
+      display: flex;
+    }
+
+    </style>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    
+
     <header id="header">
-      <img id="header-img" src="https://deliverypharmacyke.com/wp-content/uploads/2021/12/HEAD-SHOULDERS-CLASSIC-CLEAN-ANTI-DANDRUFF-SHAMPOO-500ml.jpg"></img>
+
       <nav id="nav-bar">
-        <a href="google.com" class="nav-link">google</a><br>
-        <a href="github.com" class="nav-link">github</a><br>
-        <a href="facebook.com" class="nav-link">facebook</a><br>
+        <a href="#form" class="nav-link">Form</a><br>
+        <a href="#video" class="nav-link">Video</a><br>
+        <a href="#header-img" class="nav-link">Image</a><br>
       </nav>
+
+      <img id="header-img" src="https://deliverypharmacyke.com/wp-content/uploads/2021/12/HEAD-SHOULDERS-CLASSIC-CLEAN-ANTI-DANDRUFF-SHAMPOO-500ml.jpg"></img>
+      
     </header>
 
-    <iframe id="video" src="https://youtu.be/XsqbWqre1ME?t=2">
+    
+    <h1>Shampoo</h1>
+    
+
+    <iframe name="video" id="video" src="https://youtu.be/XsqbWqre1ME?t=2">
   
     </iframe>
 
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
+    <form name="form" action="https://www.freecodecamp.com/email-submit" id="form">
       <input type="email" name="email" id="email" placeholder="Enter Your Email Adress:">
       <input type="submit" id="submit" value="Click">
 
